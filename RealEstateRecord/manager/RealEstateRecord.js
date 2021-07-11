@@ -4,10 +4,8 @@ const RERResource = require("../resourceAccess/RealEstateRecord");
 const RERFunctions = require("../Functions");
 const Utilities = require('../../utils/utilities');
 const SystemUtils = require("../../utils/utilities");
-const HookerManager = require("../../Hooker/manager/HookerManager");
 const RedisInstance = require("../../ThirdParty/Redis/RedisInstance");
 const UserRecordFunction = require("../../UserRecord/Functions");
-const UserProfileFunction = require("../../UserProfile/Functions");
 
 const {
   payloadError,
@@ -83,28 +81,12 @@ async function addRawRecords(req) {
       //Extract user record from real estate record
       {
         let userRecordPushData = [];
-        let userProfilePushData = [];
         for (let recordCounter = 0; recordCounter < pushData.length; recordCounter++) {
           let userRecord = UserRecordFunction.convertRealEstateRecordToUserRecord(pushData[recordCounter]);
-          let userProfile = UserProfileFunction.convertRealEstateRecordToUserProfile(pushData[recordCounter]);
           userRecordPushData.push(userRecord);
-          userProfilePushData.push(userProfile);
         }
 
         UserRecordFunction.addRecords(userRecordPushData);
-        UserProfileFunction.addRecords(userProfilePushData).then(() => {
-          userProfilePushData.forEach(profile => {
-            UserProfileFunction.analysisRealEstateAgency(profile.ContactPhone);
-          });
-        });
-      }
-
-      //Distribute to webhooks of partners
-      {
-        if (result !== undefined) {
-          HookerManager.distributeToHookers(pushData);
-          return success;
-        }
       }
     }
     return success;

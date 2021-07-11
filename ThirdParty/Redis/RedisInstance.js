@@ -6,7 +6,7 @@ const RedisClient = redis.createClient({
   password: process.env.REDIS_PASS
 });
 const DEFAULT_EXPIRE = 300; //5 minutes
-const PROJECT_NAME = process.env.PROJECT_NAME || "PROJECTNAME";
+const PROJECT_NAME = process.env.PROJECT_NAME || "TEMPLATEPROJECTNAME";
 const NODE_ENV = process.env.NODE_ENV || "dev";
 
 RedisClient.on("connect", function() {
