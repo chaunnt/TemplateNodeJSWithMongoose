@@ -1,0 +1,117 @@
+{
+  "HouseAbilites": {
+    "key": "ho_cab",
+    "title":"Tiềm năng BĐS",
+    "values": [
+      "Kinh doanh bán lẻ",
+      "Kinh doanh văn phòng",
+      "Kinh doanh nhà hàng",
+      "Kinh doanh khách sạn",
+      "Cho thuê để ở",
+      "Kho hàng",
+      "Khác"
+    ]
+  },
+  "HouseCompleteName": {
+    "key": "ho_cn",
+    "title":"Mức độ hoàn thiện",
+    "values": [
+      "Cao cấp",
+      "Trung bình",
+      "Thấp"
+    ]
+  },
+  "HouseElectricity": {
+    "key": "ho_ele",
+    "title":"Tình trạng điện",
+    "values": [
+      "Đầy đủ",
+      "Sử dụng chung",
+      "Điện mặt trời"
+    ]
+  },
+  "HouseFloorsType": {
+    "key": "ho_flt",
+    "title":"Loại sàn",
+    "values": [
+      "Sàn đúc bê tông",
+      "Sàn gỗ",
+      "Sàn đổ giả bê tông",
+      "Sàn khác"
+    ]
+  },
+  "HouseFurnitureList": {
+    "key": "ho_fnl",
+    "title":"Nội thất có sẵn",
+    "values": [
+      "Máy lạnh",
+      "Tivi",
+      "Tủ lạnh",
+      "Bếp điện âm",
+      "Cửa từ",
+      "Bàn ăn",
+      "Bồn tắm",
+      "Tủ quần áo",
+      "Tủ rượu"
+    ]
+  },
+  "HouseFurnitureName": {
+    "key": "ho_fn",
+    "title":"Nội thất",
+    "values": [
+      "Hiện đại",
+      "Đầy đủ",
+      "Cơ bản",
+      "Trống"
+    ]
+  },
+  "HouseQualityName": {
+    "key": "ho_qn",
+    "title":"Chất lượng nhà",
+    "values": [
+      "Mới xây dựng",
+      "Mới sửa chữa",
+      "Bình thường",
+      "Cũ nát",
+      "Khác"
+    ]
+  },
+  "HouseRoofType": {
+    "key": "ho_rft",
+    "title":"Loại mái nhà",
+    "values": [
+      "Mái đúc bê tông",
+      "Mái tôn",
+      "Mái lá",
+      "Mái khác"
+    ]
+  },
+  "HouseStairType": {
+    "key": "ho_stt",
+    "title":"Loại cầu thang",
+    "values": [
+      "Thang gỗ",
+      "Thang sắt",
+      "Thang bê tông",
+      "Thang máy"
+    ]
+  },
+  "HouseWallType": {
+    "key": "ho_wlt",
+    "title":"Loại tường nhà",
+    "values": [
+      "Tường gạch",
+      "Tường tôn",
+      "Tường gỗ"
+    ]
+  },
+  "HouseWater": {
+    "key": "ho_wat",
+    "title":"Tình trạng nước",
+    "values": [
+      "Đầy đủ",
+      "Sử dụng chung",
+      "Nước giếng"
+    ]
+  }
+}

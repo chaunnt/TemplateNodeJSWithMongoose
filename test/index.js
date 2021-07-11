@@ -1,0 +1,1 @@
+require('../UserRecord/test/UserRecord.spec.js');

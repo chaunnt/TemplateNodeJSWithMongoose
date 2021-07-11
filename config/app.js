@@ -16,8 +16,7 @@ module.exports = {
                 version: pjson.version
             },
             grouping: 'tags',
-            documentationPage: true,
-            swaggerUI: true
+            documentationPage: true
         }
     },
     logging: {

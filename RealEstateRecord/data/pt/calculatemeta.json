@@ -1,0 +1,168 @@
+{
+  "LocationHomeNumber": {
+    "key": "add_hn",
+    "title": "Số nhà",
+    "type": "inputtext"
+  },
+  "LocationFullAddress": {
+    "key": "add_fad",
+    "title": "Địa chỉ đầy đủ",
+    "type": "inputtext"
+  },
+  "LocationFrontStreetWidth": {
+    "key": "add_sw",
+    "title": "Đường trước nhà",
+    "type": "inputnumberdouble"
+  },
+  "LandWidth": {
+    "key": "la_wn",
+    "title": "Chiều ngang",
+    "type": "inputnumberdouble"
+  },
+  "LandLong": {
+    "key": "la_l",
+    "title": "Chiều dài",
+    "type": "inputnumberdouble"
+  },
+  "LandRealitySquare": {
+    "key": "la_res",
+    "title": "Diện tích thực tế",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100
+    }
+  },
+  "HouseFloors": {
+    "key": "ho_fl",
+    "title": "Số tầng",
+    "type": "inputnumberdouble"
+  },
+  "HouseTerrace": {
+    "key": "ho_te",
+    "title": "Sân thượng",
+    "type": "boolean(0/1)"
+  },
+  "HouseFrontYard": {
+    "key": "ho_fya",
+    "title": "Sân trước",
+    "type": "boolean(0/1)"
+  },
+  "HouseBackYard": {
+    "key": "ho_bya",
+    "title": "Sân sau",
+    "type": "boolean(0/1)"
+  },
+  "HouseGarage": {
+    "key": "ho_ga",
+    "title": "Nhà xe",
+    "type": "boolean(0/1)"
+  },
+  "HousePool": {
+    "key": "ho_po",
+    "title": "Hồ bơi",
+    "type": "boolean(0/1)"
+  },
+  "HouseBasement": {
+    "key": "ho_bsm",
+    "title": "Tầng hầm",
+    "type": "boolean(0/1)"
+  },
+  "HouseMiddleFloors": {
+    "key": "ho_mdf",
+    "title": "Tầng lửng",
+    "type": "boolean(0/1)"
+  },
+  "ValueSalePrice": {
+    "key": "va_sp",
+    "title": "Giá BDS",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ValueSaleUnitPrice": {
+    "key": "va_sup",
+    "title": "Giá m2 BDS",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ValueLandUnitPrice": {
+    "key": "va_lup",
+    "title": "Giá m2 Đất",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ValueHouseUnitPrice": {
+    "key": "va_hup",
+    "title": "Giá m2 Sàn",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ValueHousePrice": {
+    "key": "va_hp",
+    "title": "Giá nhà trên đất",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ValueLandPrice": {
+    "key": "va_lp",
+    "title": "Giá đất",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ValueRentPrice": {
+    "key": "va_rp",
+    "title": "Giá cho thuê",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ValueRentUnitPrice": {
+    "key": "va_rup",
+    "title": "Giá m2 sàn cho thuê",
+    "type": "maxmindouble",
+    "sample": {
+      "$gt": 0,
+      "$lt": 100000000
+    }
+  },
+  "ContactPhone": {
+    "key": "co_ph",
+    "title": "Số điện thoại liên hệ",
+    "type": "inputtext"
+  },
+  "ContactIdentity": {
+    "key": "co_ide",
+    "title": "CMND / Hộ chiếu",
+    "type": "inputtext"
+  },
+  "ContactName": {
+    "key": "co_cn",
+    "title": "Tên người liên hệ",
+    "type": "inputtext"
+  },
+  "ContactEmail": {
+    "key": "co_ema",
+    "title": "Email liên hệ",
+    "type": "inputtext"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "AreaTypeName": {
+    "key": "ar_tn",
+    "title":"Loại BĐS",
+    "values": [
+      "Biệt thự",
+      "Nhà hẻm",
+      "Đất nền",
+      "Nhà phố",
+      "Chung cư",
+      "Dự Án",
+      "Land",
+      "Nhà Xưởng",
+      "Đất khu công nghiệp",
+      "khác"
+    ]
+  },
+  "ContactTypeName": {
+    "key": "co_tn",
+    "title":"Loại liên hệ",
+    "values": [
+      "Môi giới",
+      "Chính chủ"
+    ]
+  },
+  "JuridicalContructionLimitation": {
+    "key": "ju_cli",
+    "title":"Giới hạn quy hoạch",
+    "values": [
+      "Có thể vượt chuẩn",
+      "Xây dựng tự do theo quy định",
+      "Xây dựng theo thiết kế chuẩn",
+      "Không cho xây mới"
+    ]
+  },
+  "JuridicalName": {
+    "key": "ju_jn",
+    "title":"Loại giấy tờ BĐS",
+    "values": [
+      "Sổ hồng",
+      "Sổ đỏ",
+      "HĐMB Chủ Đầu Tư",
+      "Giấy tờ tay",
+      "Khác"
+    ]
+  },
+  "JuridicalStatusName": {
+    "key": "ju_jsn",
+    "title":"Tình trạng BĐS",
+    "values": [
+      "Bình thường",
+      "Thế chấp",
+      "Tranh chấp",
+      "Quy hoạch treo",
+      "Phong tỏa kê biên",
+      "khác"
+    ]
+  },
+  "JuridicalUsingStatusName": {
+    "key": "ju_usn",
+    "title":"Mục đích sử dụng BĐS",
+    "values": [
+      "Đang cho thuê",
+      "Đang để trống",
+      "Đang ở",
+      "Đang kinh doanh"
+    ]
+  },
+  "LandDirectionName": {
+    "key": "la_dn",
+    "title":"Hướng",
+    "values": [
+      "Đông",
+      "Tây",
+      "Nam",
+      "Bắc",
+      "Đông Nam",
+      "Tây Nam",
+      "Đông Bắc",
+      "Tây Bắc"
+    ]
+  },
+  "LandPlanningTypeName": {
+    "key": "la_pn",
+    "title":"Quy hoạch loại BDS",
+    "values": [
+      "Đất thổ cư",
+      "Đất nông nghiệp",
+      "Đất sản xuất kinh doanh",
+      "Đất thương mại dịch vụ",
+      "Đất hỗn hợp",
+      "Khác"
+    ]
+  },
+  "LandShapeName": {
+    "key": "la_sn",
+    "title":"Hình dạng BĐS",
+    "values": [
+      "Bóp hậu",
+      "Méo mó",
+      "Vuông vắn",
+      "Nở hậu",
+      "Tóp hậu",
+      "Khác"
+    ]
+  },
+  "LocationPositionName": {
+    "key": "add_pn",
+    "title":"Vị trí BĐS",
+    "values": [
+      "Hẻm xe hơi",
+      "Hẻm nhỏ",
+      "Mặt tiền"
+    ]
+  },
+  "OthersInfo": {
+    "key": "minf_oinf",
+    "title":"Thông tin khác",
+    "values": [
+      "Có hẻm sau nhà",
+      "Giáp sông hồ",
+      "Căn góc",
+      "Gần chùa, nhà thờ",
+      "Gần nhà lễ tang, nhà xác",
+      "Gần nghĩa địa, mộ",
+      "Có cây to chắn nhà",
+      "Có cột điện chắn nhà",
+      "Có hố cống chắn nhà",
+      "Ở dưới chân cầu / dạ cầu",
+      "Dưới đường điện cao thế",
+      "Bị đường đâm thẳng vào nhà (ngã 3)",
+      "Bị nhà đâm hông"
+    ]
+  },
+  "NegativeInfo": {
+    "key": "minf_ninf",
+    "title":"Thông tin xấu",
+    "values": [
+      "Không cho xây hoặc không thể xây mới",
+      "Bị quy hoạch treo"
+    ]
+  },
+  "PlanInvestmentRankingName": {
+    "key": "inv_rn",
+    "title":"Đánh giá lợi nhuận",
+    "values": [
+      "Thanh khoản cao",
+      "Thanh khoản trung bình",
+      "Thanh khoản thấp"
+    ]
+  },
+  "PositiveInfo": {
+    "key": "minf_pinf",
+    "title":"Thông tin tốt",
+    "values": [
+      "Có 2 mặt đường chính",
+      "Căn góc, có hẻm bên hông",
+      "Có hẻm sau nhà",
+      "Gần chợ, siêu thị (<500m)",
+      "Gần công viên, trung tâm giải trí (<500m)",
+      "Khu dân cư cao cấp có cổng bảo vệ",
+      "Vị trí đẹp nhất trong đoạn đường",
+      "Tiện làm quán cafe, nhà hàng, khách sạn",
+      "Hẻm thông ra đường khác đẹp hơn."
+    ]
+  },
+  "SystemSourceType": {
+    "key": "syt_srty",
+    "title":"Nguồn thông tin",
+    "values": [
+      "Rao vặt",
+      "Khách đăng",
+      "Nội bộ",
+      "Khác"
+    ]
+  },
+  "SystemPostType": {
+    "key": "syt_spt",
+    "title":"Loại bài đăng",
+    "values": [
+      "Rao bán",
+      "Cho thuê"
+    ]
+  }
+}

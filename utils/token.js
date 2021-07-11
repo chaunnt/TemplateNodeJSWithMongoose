@@ -1,31 +1,35 @@
 /**
- * Created by A on 7/18/17.
- */
+* Created by A on 7/18/17.
+*/
 'use strict';
-
 const jwt       = require('jsonwebtoken');
 const AppConfig = require('../config/app');
 
-function createToken(user) {
-    let scopes;
-    // Check if the user object passed in
-    // has admin set to true, and if so, set
-    // scopes to admin
-    if (user.admin) {
-        scopes = 'admin';
-    }
-    // Sign the JWT
-    return jwt.sign({
-            id: user._id,
-            username: user.username,
-            scope: scopes
-        },
-        AppConfig.jwt.secret,
-        {
-            algorithm: 'HS256',
-            expiresIn: AppConfig.jwt.expiresIn
-        }
-    );
+function createProjectToken(projectData, expire = null) {
+  // Sign the JWT
+  const hash = {
+    algorithm: 'HS256',
+    expiresIn: expire || '60 days',
+  }
+
+  return jwt.sign(projectData, AppConfig.jwt.secret, hash);
 }
 
-module.exports = createToken;
+function createToken(data, expire = null) {
+  const hash = {
+    algorithm: 'HS256',
+    expiresIn: expire || AppConfig.jwt.expiresIn,
+  }
+
+  return jwt.sign(data, AppConfig.jwt.secret, hash);
+}
+
+function verifyToken(token) {
+  return jwt.verify(token, AppConfig.jwt.secret);
+}
+
+module.exports = {
+  createToken,
+  verifyToken,
+  createProjectToken
+};

@@ -4,11 +4,8 @@
 'use strict'
 const Logger    = require('./utils/logging');
 const Glue      = require('glue');
-const Routes    = require('./config/routes');
 const Manifest  = require('./config/manifest');
-const AppConfig = require('./config/app');
-const CronJobs  = require('./cronjob');
-const dotenv    = require('dotenv').config();
+const Redis     = require('./ThirdParty/Redis/RedisInstance');
 
 Glue.compose(Manifest, {relativeTo: __dirname}, (err, server) => {
     if (err) {
@@ -17,13 +14,8 @@ Glue.compose(Manifest, {relativeTo: __dirname}, (err, server) => {
     server.start(() => {
         Logger.info('Server running at:', server.info.uri);
 
+        Redis.initRedis().then(() => {
+        //     Kue.init();
+        });
     });
-    server.auth.strategy('jwt', 'jwt', {
-        key: AppConfig.jwt.secret,
-        verifyOptions: { algorithms: ['HS256'] }
-    });
-    server.route (Routes);
-
-    CronJobs.startJobs();
-
 });

@@ -5,7 +5,9 @@
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^3.0.6",
-    "child_process": "^1.0.2",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "deep-diff": "^1.0.2",
     "dotenv": "^4.0.0",
     "glue": "^4.1.0",
     "good": "^7.2.0",
@@ -17,6 +19,7 @@
     "hapi-swagger": "^7.7.0",
     "inert": "^4.2.0",
     "knex": "^0.13.0",
+    "mocha": "^9.0.1",
     "mongoose": "^5.9.7",
     "mysql": "^2.15.0",
     "node-cron": "^2.0.3",
@@ -28,8 +31,8 @@
     "nodemon": "^1.11.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
+    "test": "mocha test/index.js --timeout 15000 --exit",
+    "start": "node server.js",
     "eslint": "./node_modules/.bin/eslint ./*/*.js",
     "dev": "nodemon --exec 'npm run eslint & npm start'"
   },

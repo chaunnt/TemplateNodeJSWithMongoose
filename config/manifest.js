@@ -4,6 +4,7 @@
 'use strict';
 
 const AppConfig = require('../config/app');
+const routes = require('../config/routes');
 
 const manifest = {
     server: {
@@ -15,7 +16,8 @@ const manifest = {
                 isCaseSensitive: false,
                 stripTrailingSlash: true
             },
-            port: process.env.PORT || 5001,
+            port: process.env.PORT || 9999,
+            host: "0.0.0.0",
             routes: {
                 cors: true
             }
@@ -26,7 +28,7 @@ const manifest = {
             register: 'hapi-auth-jwt',
             options: AppConfig.jwt.options
         }
-    }]
+    }, ...routes]
 };
 
 if (AppConfig.documentation.enable) {

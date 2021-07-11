@@ -8,7 +8,10 @@ const dbPassword = process.env.DB_PASSWORD;
 const dbName = process.env.DB_NAME;
 const dbPort = process.env.DB_PORT;
 const mongoose = require("mongoose");
-
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
 mongoose.connect(
   `mongodb://${dbUser}:${dbPassword}@${dbHost}:${dbPort}/${dbName}`,
   { useNewUrlParser: true }
