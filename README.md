@@ -28,3 +28,7 @@ $ npm start
 ```
 
 ## Try http://localhost:5001/documentation
+
+# Deploy docker
+docker build -f Dockerfile -t <tencontainer>:latest .
+docker run -v -d -p 12345:9999 -t <tencontainer>:latest
