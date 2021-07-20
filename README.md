@@ -32,3 +32,7 @@ $ npm start
 # Deploy docker
 docker build -f Dockerfile -t <tencontainer>:latest .
 docker run -v -d -p 12345:9999 -t <tencontainer>:latest
+
+# System design
+https://drive.google.com/file/d/1suyjWHR82GvFKaPtnIojiGSZrfrW8Ang/view?usp=sharing
+
